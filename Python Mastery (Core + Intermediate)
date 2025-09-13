@@ -1,0 +1,178 @@
+#Checking whether a number is a prime or no.
+
+
+import math
+num1 = int(input("Enter the number you want to check:"))
+if num1<= 1:
+    print("The given number is not a prime.")
+    
+else:
+    is_prime= True
+    for i in range (2,int(math.isqrt(num1))):
+        if num1 % i ==0:
+            is_prime = False
+if is_prime:
+    print("The number you have entered is prime.")
+else:
+    print("The given number is not a prime")
+
+
+
+# finding factorial of a number.
+
+
+num =int(input("Enter a  number:"))
+fact = 1
+for x in range(1,num+1):
+    fact = fact * x
+print("The factorial of the number",num,'is',fact)
+
+
+# reversing a string 
+
+
+text = input("Enter the string you want to reverse:")
+text = text[::-1]
+print(text)
+
+# reversing a string using loop
+
+
+text1 = input("Enter the string you want to reverse:")
+rev = ""
+for j in text1:
+    rev = j + rev 
+print(rev)
+
+# fibonnaci sequence.
+
+
+innt = int(input("Enter the number you wanna find for:"))
+a = 0
+b =1
+print("The fibonacci number is:")
+for i in range(innt):
+    print(a, end='')
+    a , b  = b, a+b
+
+
+#write a program that asks the user to input number of seconds and then expresses it in terms of many minutes and seconds it contains.
+
+num_seconds = int(input('Enter the number of seconds:'))
+num_minutes = num_seconds//60
+remaining_seconds = num_seconds%60
+print(num_minutes,"Minutes.","and",remaining_seconds,"Seconds.")
+
+#write a program that repeatedlty asks from users some numbers untill string "done" is typed. the program should print the sum of all number entered.
+
+total = 0
+s = input('Enter a number or"done":')
+while s!='done':
+    num = int(s)
+    total = total + num 
+    s = input('Enter a number or"done":')
+print('The sum of. entered number is', total)
+
+
+# The volume of a sphere with radius r is 43πr3. What is the volume of a sphere with radius 5?
+
+
+a =4/3*3.14*5**3
+print(a)
+
+#2. Suppose the cover price of a book is $24.95, but bookstores get a 40% discount. 
+# Shipping costs $3 for the first copy and 75 cents for each additional copy. 
+# What is the total wholesale cost for60 copies?
+
+
+
+wholesale_cost = (24.95 * 0.6 * 60) + (3 + 0.75 * 59)
+print(wholesale_cost)
+
+
+#write a program to print a square multiplication table as shown below:
+
+
+for row in range(1,10):
+    for column in range(1,10):
+        prod = row * column
+        if prod<10:
+            print('',prod,'',end = '')
+        else:
+            print(prod,'',end ='')
+    print()
+
+
+# loop problem 1.)
+
+
+c =0 
+for x in range(10):
+    for y in range(5):
+        c+=1
+print(c)
+ 
+
+#make pattern 1
+#                12
+#                123
+#                1234
+#                12345
+
+
+
+n =5 
+for i in range(1,6):
+    line = ''.join(str(j) for j in range(1,i+1))
+    print(line)
+
+
+#3) Calculate sum of all numbers from1 to a given number.
+
+
+nom = int(input("Enter a number:"))
+j = 0
+for i in range(0,nom+1):
+    j += i 
+print(j)
+
+#4) print multiplication table of given number 
+
+
+nom = int(input("Enter a number:"))
+j = 0
+for i in range(nom-1,11):
+    j = i*2
+    print(j)
+
+
+#5)Display numbers from a list using a loop.
+# conditions,  > The number  must be divisible by five
+#              > If the number is greater than 150, then skip it and move to the following number.
+#              > If the number id greater than 500, then stop the loop.
+
+
+numbers =[12,75,150,180,145,525,50]
+for item in numbers:
+    if item>500:
+        break
+    elif item > 150:
+        continue
+    elif item%5 ==0:
+        print(item)
+
+
+        
+
+        
+    
+
+
+
+
+
+
+
+
+
+
