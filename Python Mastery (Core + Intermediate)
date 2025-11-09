@@ -1,4 +1,4 @@
-#Checking whether a number is a prime or no.
+'''Checking whether a number is a prime or no.'''
 
 
 import math
@@ -18,7 +18,7 @@ else:
 
 
 
-# finding factorial of a number.
+'''finding factorial of a number.'''
 
 
 num =int(input("Enter a  number:"))
@@ -28,14 +28,14 @@ for x in range(1,num+1):
 print("The factorial of the number",num,'is',fact)
 
 
-# reversing a string 
+'''# reversing a string '''
 
 
 text = input("Enter the string you want to reverse:")
 text = text[::-1]
 print(text)
 
-# reversing a string using loop
+'''# reversing a string using loop'''
 
 
 text1 = input("Enter the string you want to reverse:")
@@ -44,7 +44,7 @@ for j in text1:
     rev = j + rev 
 print(rev)
 
-# fibonnaci sequence.
+'''# fibonnaci sequence.'''
 
 
 innt = int(input("Enter the number you wanna find for:"))
@@ -56,14 +56,14 @@ for i in range(innt):
     a , b  = b, a+b
 
 
-#write a program that asks the user to input number of seconds and then expresses it in terms of many minutes and seconds it contains.
+'''#write a program that asks the user to input number of seconds and then expresses it in terms of many minutes and seconds it contains.'''
 
 num_seconds = int(input('Enter the number of seconds:'))
 num_minutes = num_seconds//60
 remaining_seconds = num_seconds%60
 print(num_minutes,"Minutes.","and",remaining_seconds,"Seconds.")
 
-#write a program that repeatedlty asks from users some numbers untill string "done" is typed. the program should print the sum of all number entered.
+'''#write a program that repeatedlty asks from users some numbers untill string "done" is typed. the program should print the sum of all number entered.'''
 
 total = 0
 s = input('Enter a number or"done":')
@@ -74,15 +74,15 @@ while s!='done':
 print('The sum of. entered number is', total)
 
 
-# The volume of a sphere with radius r is 43πr3. What is the volume of a sphere with radius 5?
+'''# The volume of a sphere with radius r is 43πr3. What is the volume of a sphere with radius 5?'''
 
 
 a =4/3*3.14*5**3
 print(a)
 
-#2. Suppose the cover price of a book is $24.95, but bookstores get a 40% discount. 
+'''#2. Suppose the cover price of a book is $24.95, but bookstores get a 40% discount. 
 # Shipping costs $3 for the first copy and 75 cents for each additional copy. 
-# What is the total wholesale cost for60 copies?
+# What is the total wholesale cost for60 copies?'''
 
 
 
@@ -90,7 +90,7 @@ wholesale_cost = (24.95 * 0.6 * 60) + (3 + 0.75 * 59)
 print(wholesale_cost)
 
 
-#write a program to print a square multiplication table as shown below:
+'''#write a program to print a square multiplication table as shown below:'''
 
 
 for row in range(1,10):
@@ -103,7 +103,7 @@ for row in range(1,10):
     print()
 
 
-# loop problem 1.)
+'''# loop problem 1.)'''
 
 
 c =0 
@@ -113,11 +113,11 @@ for x in range(10):
 print(c)
  
 
-#make pattern 1
+'''#make pattern 1
 #                12
 #                123
 #                1234
-#                12345
+#                12345'''
 
 
 
@@ -127,7 +127,7 @@ for i in range(1,6):
     print(line)
 
 
-#3) Calculate sum of all numbers from1 to a given number.
+'''#3) Calculate sum of all numbers from1 to a given number.'''
 
 
 nom = int(input("Enter a number:"))
@@ -136,7 +136,7 @@ for i in range(0,nom+1):
     j += i 
 print(j)
 
-#4) print multiplication table of given number 
+'''#4) print multiplication table of given number '''
 
 
 nom = int(input("Enter a number:"))
@@ -146,10 +146,10 @@ for i in range(nom-1,11):
     print(j)
 
 
-#5)Display numbers from a list using a loop.
+'''#5)Display numbers from a list using a loop.
 # conditions,  > The number  must be divisible by five
 #              > If the number is greater than 150, then skip it and move to the following number.
-#              > If the number id greater than 500, then stop the loop.
+#              > If the number id greater than 500, then stop the loop.'''
 
 
 numbers =[12,75,150,180,145,525,50]
